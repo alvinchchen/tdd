@@ -4,3 +4,4 @@ browser = webdriver.Chrome("D:\Alvin_Chen\Downloads\chromedriver_win32\chromedri
 browser.get('http://localhost:8000')
 assert 'Django' in browser.title
 print(1)
+browser.quit()
