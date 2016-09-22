@@ -3,4 +3,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home_page(request):
-	return render(request,'home.html')
+	string = {'new_item_text' : request.POST.get('item_text',''),}
+	return render(request,'home.html', string)
